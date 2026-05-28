@@ -487,7 +487,7 @@
   font-weight: 700;
   color: var(--text-dark);
   transition: color var(--transition), background var(--transition);
-  user-select: none;
+  
 }
 
 .faq-item summary::-webkit-details-marker { display: none; }
