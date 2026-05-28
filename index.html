@@ -1,146 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Escondido | Home</title>
-    <link rel="stylesheet" href="css/style.css" />
-    
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Escondido | Plumbing & Repair Services</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
 
-    <!------------------HEADER------------------>
-    <header>
-      <div class="container">
-        <div class="navbar">
-          <div class="logo">
-            <h1>ESCONDIDO</h1>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li class="has-dropdown">
-                <a href="services.html">Services <i class="fa-solid fa-chevron-down fa-xs"></i></a>
-              </li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-          <div class="nav-actions">
-            <a href="#" class="nav-cart"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a href="sign.html" class="btn">Sign Up</a>
-          </div>
+  <!-- ==================== HEADER ==================== -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <i class="fa-solid fa-droplet logo-icon"></i>
+          <span>Escondido</span>
+        </div>
+
+        <nav class="nav" id="nav">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-dropdown">
+              <a href="services.html" class="nav-link">Services <i class="fa-solid fa-chevron-down fa-2xs"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Leak Repair</a></li>
+                <li><a href="#">Pipe Install</a></li>
+                <li><a href="#">Drain Cleaning</a></li>
+                <li><a href="#">Water Heater</a></li>
+              </ul>
+            </li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="#" class="nav-cart" aria-label="Cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+          <a href="sign.html" class="btn btn-primary">Sign Up</a>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!------------------HERO / HOME SECTION------------------>
-    <section class="hero">
-      <div class="hero-bg-pattern"></div>
-      <div class="container">
-        <div class="hero-inner">
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="home">
+    <div class="hero-pattern"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            We provide top-notch<br>
+            plumbing &amp; repair<br>
+            services
+          </h1>
+          <p class="hero-subtitle">
+            Our team of experts is equipped to assist you with a variety of pipe
+            repair needs. please share your email address to connect with us.
+          </p>
+          <div class="hero-email">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="Enter your email address" />
+          </div>
+          <a href="#services" class="btn btn-white">
+            View Services <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="hero-image">
+          <div class="hero-img-badge">
+            <i class="fa-solid fa-droplet"></i>
+            <span>Escondido Plumbing<br>Repair Experts</span>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=700&q=80"
+            alt="Escondido Plumbing Team"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <!-- LEFT: Text content -->
-          <div class="hero-content">
-            <h1 class="hero-title">
-              We provide top-notch<br />
-              plumbing &amp; repair<br />
-              services
-            </h1>
-            <p class="hero-subtitle">
-              Our team of experts is equipped to assist you with a variety of pipe
-              repair needs. please share your email address to connect with us.
-            </p>
+  <!-- ==================== HOW IT WORKS ==================== -->
+  <section class="how-it-works section-pad" id="how">
+    <div class="container">
+      <div class="section-header">
+        <h2>How It Works</h2>
+        <p>Fast, Reliable and Hassle-Free Plumbing Solution for Your Home</p>
+      </div>
+      <div class="how-grid">
+        <div class="how-card">
+          <div class="how-img-wrap">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80" alt="Request Service" />
+          </div>
+          <h4>Request Your Services</h4>
+          <p>Call or book online tell us your plumbing issue and we're on it immediately.</p>
+        </div>
+        <div class="how-card">
+          <div class="how-img-wrap">
+            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80" alt="Inspection" />
+          </div>
+          <h4>Expect Inspection</h4>
+          <p>Our licensed plumbers assess the problems and provide a clear upfront estimate.</p>
+        </div>
+        <div class="how-card">
+          <div class="how-img-wrap">
+            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&q=80" alt="Fast Fix" />
+          </div>
+          <h4>Fast, Reliable Fix</h4>
+          <p>We repair efficiently and leave your home safe, clean, and fully functional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <!-- Email input row -->
-            <div class="hero-email-row">
-              <div class="hero-email-input">
-                <i class="fa-solid fa-envelope"></i>
-                <input type="email" placeholder="Enter your email address" />
+  <!-- ==================== RELIABLE ==================== -->
+  <section class="reliable section-pad" id="reliable">
+    <div class="container">
+      <div class="reliable-inner">
+        <div class="reliable-img">
+          <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=700&q=80" alt="Plumbing Solutions" />
+        </div>
+        <div class="reliable-content">
+          <h2>Reliable and Long-Lasting<br>Plumbing Solutions</h2>
+          <p class="reliable-intro">
+            Our focus on expert craftmanship advanced plumbing technology and responsive service make us the trusted partner.
+          </p>
+          <div class="reliable-features">
+            <div class="reliable-feature">
+              <span class="feat-dot"><i class="fa-solid fa-circle-check"></i></span>
+              <div>
+                <h5>Smart Plumbing Solutions</h5>
+                <p>We combine modern diagnostic, high-grade materials and precision repair methods for efficient top-lasting results.</p>
               </div>
             </div>
-
-            <a href="services.html" class="btn-hero">
-              View Services <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
-
-          <!-- RIGHT: Image card -->
-          <div class="hero-image-wrap">
-            <div class="hero-img-badge">
-              <i class="fa-solid fa-droplet"></i>
-              <span>Escondido Plumbing<br/>Repair Experts</span>
+            <div class="reliable-feature">
+              <span class="feat-dot"><i class="fa-solid fa-circle-check"></i></span>
+              <div>
+                <h5>Property-Focused Care</h5>
+                <p>Beyond repairs we ensure your entire plumbing system stays healthy through routine maintenance.</p>
+              </div>
             </div>
-            <img
-              src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=700&q=80"
-              alt="Escondido Plumbing Team"
-              class="hero-img"
-            />
           </div>
-
+          <a href="#services" class="btn btn-primary btn-arrow">
+            View Services <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!------------------FOOTER------------------>
-    <footer class="footer">
-      <div class="footer-top">
-        <div class="footer-col footer-brand">
-          <div class="footer-logo">
-            <span class="logo-icon">&#9881;</span>
-            <span class="logo-text">ESCONDIDO</span>
+  <!-- ==================== APPOINTMENT ==================== -->
+  <section class="appointment section-pad" id="appointment">
+    <div class="container">
+      <div class="appt-inner">
+        <div class="appt-img">
+          <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80" alt="Plumbing work" />
+        </div>
+        <div class="appt-form-card">
+          <div class="appt-form-header">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>Book an Appointment</span>
           </div>
-          <ul class="footer-contact">
-            <li><i class="fa-solid fa-envelope icon"></i> bill.sanders@escondido.com</li>
-            <li><i class="fa-solid fa-phone icon"></i> (252) 555-0126</li>
-            <li><i class="fa-solid fa-location-dot icon"></i> 2464 Royal Ln. Mesa, New Jersey</li>
-          </ul>
-          <div class="footer-socials">
-            <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4 class="footer-heading">Quick Menu</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="blog.html">Blogs</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4 class="footer-heading">Legal</h4>
-          <ul class="footer-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms and Condition</a></li>
-            <li><a href="#">Cookies Policy</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4 class="footer-heading">Company</h4>
-          <ul class="footer-links">
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Documentation</a></li>
-          </ul>
+          <h3>Make an<br>Appointment</h3>
+          <p>Schedule your plumbing service in just a few clicks. Fill out the form below, choose your preferred date, and our expert technician will get back to you with confirmation.</p>
+          <form class="appt-form" id="apptForm">
+            <input type="text" placeholder="Full Name" required />
+            <div class="appt-row">
+              <input type="tel" placeholder="Phone Number" />
+              <input type="email" placeholder="Email Address" />
+            </div>
+            <div class="appt-row">
+              <select>
+                <option value="" disabled selected>Select Service</option>
+                <option>Leak Repair</option>
+                <option>Pipe Install</option>
+                <option>Drain Cleaning</option>
+                <option>Water Heater</option>
+                <option>Bath Upgrade</option>
+                <option>Toilet Repair</option>
+              </select>
+              <input type="date" />
+            </div>
+            <div class="appt-row">
+              <input type="time" />
+              <input type="text" placeholder="Service Location" />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Book Appointment Now</button>
+          </form>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>2026 Escondido, All right reserved</p>
-      </div>
-    </footer>
+    </div>
+  </section>
 
-    <script src="js/script.js"></script>
-  </body>
+  <!-- ==================== TRUSTED EXPERTS ==================== -->
+  <section class="trusted section-pad" id="about">
+    <div class="container">
+      <div class="trusted-inner">
+        <div class="trusted-img">
+          <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=700&q=80" alt="Plumbing experts at work" />
+        </div>
+        <div class="trusted-content">
+          <h2>Trusted plumbing experts with year of experience</h2>
+          <p>Delivering trusted plumbing solution for homes &amp; businesses since 2024.</p>
+          <p>At Escondido, we pride ourselves on fast, reliable, and professional plumbing service. Our licensed technicians are committed to ensuring every jobs is completed to your satisfaction.</p>
+          <p>At Escondido, we pride ourselves on fast, reliable, and professional plumbing service. Our licensed technicians are committed to ensuring every jobs is completed to your satisfaction.</p>
+          <a href="#about" class="btn btn-primary btn-arrow">
+            More About Us <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== OUR SERVICES ==================== -->
+  <section class="services section-pad" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <p>From quick fixes to complete installations, we handle it all with precision and care.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card service-card--active">
+          <div class="service-icon"><i class="fa-solid fa-faucet-drip"></i></div>
+          <h4>Leak Repair</h4>
+          <p>Quick detection and fixing of leaks to prevent water damage.</p>
+          <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-pipe-section"></i></div>
+          <h4>Pipe Install</h4>
+          <p>Professional installation for residential and commercial needs.</p>
+          <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-toilet"></i></div>
+          <h4>Drain Cleaning</h4>
+          <p>Clear clogged drains and restore smooth water flow.</p>
+          <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-fire-burner"></i></div>
+          <h4>Water Heater</h4>
+          <p>Installation, repair, and maintenance for all heater types.</p>
+          <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-bath"></i></div>
+          <h4>Bath Upgrade</h4>
+          <p>Upgrade your bathroom with modern, efficient fixtures.</p>
+          <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-wrench"></i></div>
+          <h4>Toilet Repair</h4>
+          <p>Professional installation for residential and commercial needs.</p>
+          <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERTS BEHIND SUCCESS ==================== -->
+  <section class="experts section-pad" id="team">
+    <div class="container">
+      <div class="section-header">
+        <h2>The Experts Behind Every Sucess</h2>
+        <p>Our team is made up of skilled and experienced plumbing professionals dedicated to provide reliable, high quality solutions. With a passion for excellence and a customer-first approach, we work together to tackle every challenge with precision and care, ensuring your satisfaction every step of the way.</p>
+      </div>
+      <div class="experts-grid">
+        <div class="expert-card">
+          <div class="expert-img-wrap">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80" alt="John Anderson" />
+          </div>
+          <h5>John Anderson</h5>
+          <span>Lead Technician</span>
+        </div>
+        <div class="expert-card">
+          <div class="expert-img-wrap">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&q=80" alt="Sarah Miller" />
+          </div>
+          <h5>Sarah Miller</h5>
+          <span>Project Manager</span>
+        </div>
+        <div class="expert-card">
+          <div class="expert-img-wrap">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&q=80" alt="Micheal Carter" />
+          </div>
+          <h5>Micheal Carter</h5>
+          <span>Installation Specialist</span>
+        </div>
+        <div class="expert-card">
+          <div class="expert-img-wrap">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&q=80" alt="Emily Wright" />
+          </div>
+          <h5>Emily Wright</h5>
+          <span>Customer Support</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOG ==================== -->
+  <section class="blog section-pad" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <h2>Latest Tips, News &amp; Plumbing Insights</h2>
+      </div>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=500&q=80" alt="Water Pressure" />
+          </div>
+          <div class="blog-body">
+            <h5>How to Maintain Good Water Pressure in Your Home</h5>
+            <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&q=80" alt="Emergency Plumbing" />
+          </div>
+          <div class="blog-body">
+            <h5>Emergency Plumbing: What to Do Before a Technician Arrives</h5>
+            <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=500&q=80" alt="Eco Plumbing" />
+          </div>
+          <div class="blog-body">
+            <h5>Eco-Friendly Plumbing Upgrades That Lower Your Water Bills</h5>
+            <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" id="contact">
+    <div class="footer-top">
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">
+          <i class="fa-solid fa-droplet"></i>
+          <span>ESCONDIDO</span>
+        </div>
+        <ul class="footer-contact">
+          <li>
+            <i class="fa-solid fa-envelope icon"></i>
+            bill.sanders@escondido.com
+          </li>
+          <li>
+            <i class="fa-solid fa-phone icon"></i>
+            (252) 555-0126
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot icon"></i>
+            2464 Royal Ln. Mesa, New Jersey
+          </li>
+        </ul>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="X" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Menu</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Legal</h4>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Condition</a></li>
+          <li><a href="#">Cookies Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Company</h4>
+        <ul class="footer-links">
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Documentation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2026 Escondido, All right reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
 </html>
