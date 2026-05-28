@@ -1,84 +1,116 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Escondido | Home </title>
+    <title>Escondido | Home</title>
     <link rel="stylesheet" href="css/style.css" />
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+
     <!------------------HEADER------------------>
     <header>
       <div class="container">
         <div class="navbar">
           <div class="logo">
-            <h1>ECSONDIDIO</h1>
+            <h1>ESCONDIDO</h1>
           </div>
           <nav>
             <ul>
-              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html" class="active">Home</a></li>
               <li><a href="about.html">About Us</a></li>
-              <li><a href="services.html">Services</a></li>
+              <li class="has-dropdown">
+                <a href="services.html">Services <i class="fa-solid fa-chevron-down fa-xs"></i></a>
+              </li>
               <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </nav>
-
-          <a href="sign.html" class="btn">Sign Up </a>
+          <div class="nav-actions">
+            <a href="#" class="nav-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="sign.html" class="btn">Sign Up</a>
+          </div>
         </div>
       </div>
     </header>
 
+    <!------------------HERO / HOME SECTION------------------>
+    <section class="hero">
+      <div class="hero-bg-pattern"></div>
+      <div class="container">
+        <div class="hero-inner">
+
+          <!-- LEFT: Text content -->
+          <div class="hero-content">
+            <h1 class="hero-title">
+              We provide top-notch<br />
+              plumbing &amp; repair<br />
+              services
+            </h1>
+            <p class="hero-subtitle">
+              Our team of experts is equipped to assist you with a variety of pipe
+              repair needs. please share your email address to connect with us.
+            </p>
+
+            <!-- Email input row -->
+            <div class="hero-email-row">
+              <div class="hero-email-input">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Enter your email address" />
+              </div>
+            </div>
+
+            <a href="services.html" class="btn-hero">
+              View Services <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- RIGHT: Image card -->
+          <div class="hero-image-wrap">
+            <div class="hero-img-badge">
+              <i class="fa-solid fa-droplet"></i>
+              <span>Escondido Plumbing<br/>Repair Experts</span>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=700&q=80"
+              alt="Escondido Plumbing Team"
+              class="hero-img"
+            />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!------------------FOOTER------------------>
     <footer class="footer">
       <div class="footer-top">
-        <!-- Brand Column -->
         <div class="footer-col footer-brand">
           <div class="footer-logo">
             <span class="logo-icon">&#9881;</span>
             <span class="logo-text">ESCONDIDO</span>
           </div>
           <ul class="footer-contact">
-            <li>
-              <i class="fa-solid fa-envelope icon"></i>
-              bill.sanders@escondido.com
-            </li>
-            <li>
-              <i class="fa-solid fa-phone icon"></i>
-              (252) 555-0126
-            </li>
-            <li>
-              <i class="fa-solid fa-location-dot icon"></i>
-              2464 Royal Ln. Mesa, New Jersey
-            </li>
+            <li><i class="fa-solid fa-envelope icon"></i> bill.sanders@escondido.com</li>
+            <li><i class="fa-solid fa-phone icon"></i> (252) 555-0126</li>
+            <li><i class="fa-solid fa-location-dot icon"></i> 2464 Royal Ln. Mesa, New Jersey</li>
           </ul>
           <div class="footer-socials">
-            <a href="#" aria-label="Facebook" class="social-link">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" aria-label="X / Twitter" class="social-link">
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-            <a href="#" aria-label="LinkedIn" class="social-link">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="#" aria-label="Instagram" class="social-link">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
-
-        <!-- Quick Menu Column -->
         <div class="footer-col">
           <h4 class="footer-heading">Quick Menu</h4>
           <ul class="footer-links">
@@ -88,8 +120,6 @@
             <li><a href="blog.html">Blogs</a></li>
           </ul>
         </div>
-
-        <!-- Legal Column -->
         <div class="footer-col">
           <h4 class="footer-heading">Legal</h4>
           <ul class="footer-links">
@@ -98,8 +128,6 @@
             <li><a href="#">Cookies Policy</a></li>
           </ul>
         </div>
-
-        <!-- Company Column -->
         <div class="footer-col">
           <h4 class="footer-heading">Company</h4>
           <ul class="footer-links">
@@ -108,7 +136,6 @@
           </ul>
         </div>
       </div>
-
       <div class="footer-bottom">
         <p>2026 Escondido, All right reserved</p>
       </div>
