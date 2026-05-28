@@ -29,12 +29,12 @@
                   Services <i class="fa-solid fa-chevron-down" style="font-size:0.65rem;"></i>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Leak Repair</a></li>
-                  <li><a href="#">Pipe Install</a></li>
-                  <li><a href="#">Drain Cleaning</a></li>
-                  <li><a href="#">Water Heater</a></li>
-                  <li><a href="#">Bath Upgrade</a></li>
-                  <li><a href="#">Toilet Repair</a></li>
+                  <li><a href="services.html">Leak Repair</a></li>
+                  <li><a href="services.html">Pipe Install</a></li>
+                  <li><a href="services.html">Drain Cleaning</a></li>
+                  <li><a href="services.html">Water Heater</a></li>
+                  <li><a href="services.html">Bath Upgrade</a></li>
+                  <li><a href="services.html">Toilet Repair</a></li>
                 </ul>
               </li>
               <li><a href="blog.html" class="nav-link">Blog</a></li>
@@ -244,10 +244,10 @@
             <h3>Make an Appointment</h3>
             <p>Schedule your plumbing service in just a few clicks. Fill out the form below, choose your preferred date, and our expert technician will get back to you with confirmation.</p>
             <form class="appt-form" onsubmit="return false;">
-              <input type="text" placeholder="Full Name" />
+              <input type="text" placeholder="Full Name" required/>
               <div class="appt-row">
-                <input type="tel" placeholder="Phone Number" />
-                <input type="email" placeholder="Email Address" />
+                <input type="tel" placeholder="Phone Number" required/>
+                <input type="email" placeholder="Email Address"required />
               </div>
               <div class="appt-row">
                 <select>
@@ -259,11 +259,11 @@
                   <option>Bath Upgrade</option>
                   <option>Toilet Repair</option>
                 </select>
-                <input type="date" placeholder="Preferred Date" />
+                <input type="date" placeholder="Preferred Date" required />
               </div>
               <div class="appt-row">
-                <input type="time" placeholder="Preferred Time" />
-                <input type="text" placeholder="Service Location" />
+                <input type="time" placeholder="Preferred Time" required />
+                <input type="text" placeholder="Service Location" required />
               </div>
               <button type="submit" class="btn btn-primary btn-block">Book Appointment Now</button>
             </form>
