@@ -1,5 +1,3 @@
-/
-
 /* ---------- CSS VARIABLES ---------- */
 :root {
   --primary:        #2b2b8b;
@@ -30,7 +28,7 @@
   --social-hover-bg:  rgba(255,255,255,0.25);
 }
 
-/* ----------HEADER---------- */
+/* ---------- RESET ---------- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -278,6 +276,22 @@ ul {
   color: var(--primary);
 }
 
+/* Sign Up button — matches image: solid primary pill */
+.nav-actions .btn-primary {
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 20px;
+  padding: 9px 22px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.nav-actions .btn-primary:hover {
+  background: var(--primary-light);
+  transform: translateY(-1px);
+}
+
 /* Hamburger */
 .hamburger {
   display: none;
@@ -301,7 +315,6 @@ ul {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Hamburger open state */
 .hamburger.open span:nth-child(1) {
   transform: translateY(7.5px) rotate(45deg);
 }
@@ -381,14 +394,15 @@ ul {
   margin-bottom: 1.8rem;
 }
 
+/* Hero email input — pill/rounded style matching image */
 .hero-email {
   display: flex;
   align-items: center;
   gap: 0.7rem;
   background: rgba(255,255,255,0.12);
   border: 1.5px solid rgba(255,255,255,0.22);
-  border-radius: var(--radius-sm);
-  padding: 0 1rem;
+  border-radius: 30px;
+  padding: 0 1.1rem;
   max-width: 390px;
   margin-bottom: 1.6rem;
   transition: border-color var(--transition);
@@ -417,6 +431,13 @@ ul {
 
 .hero-email input::placeholder {
   color: rgba(255,255,255,0.45);
+}
+
+/* "View Services" button — white pill style */
+.hero-content .btn-white {
+  border-radius: 20px;
+  padding: 11px 26px;
+  font-size: 0.85rem;
 }
 
 /* Hero image */
@@ -609,6 +630,7 @@ ul {
   box-shadow: var(--shadow-md);
 }
 
+/* Form card — white card with strong shadow, matching image */
 .appt-form-card {
   background: var(--white);
   border: 1px solid var(--border);
@@ -621,16 +643,20 @@ ul {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 0.78rem;
+  font-weight: 700;
   color: var(--primary);
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.7rem;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
+  background: rgba(43,43,139,0.07);
+  padding: 6px 12px;
+  border-radius: 20px;
+  width: fit-content;
 }
 
 .appt-form-header i {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .appt-form-card h3 {
@@ -641,7 +667,7 @@ ul {
   line-height: 1.25;
 }
 
-.appt-form-card p {
+.appt-form-card > p {
   font-size: 0.82rem;
   color: var(--text-light);
   line-height: 1.7;
@@ -681,6 +707,14 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.75rem;
+}
+
+/* Book button — full-width primary */
+.appt-form .btn-block {
+  margin-top: 0.25rem;
+  padding: 13px 24px;
+  font-size: 0.88rem;
+  border-radius: var(--radius-sm);
 }
 
 /* =====================================================
@@ -743,6 +777,7 @@ ul {
   padding: 1.6rem;
   transition: box-shadow var(--transition), border-color var(--transition), transform var(--transition);
   cursor: pointer;
+  background: var(--white);
 }
 
 .service-card:hover {
@@ -751,14 +786,22 @@ ul {
   transform: translateY(-4px);
 }
 
+/* Active card — solid primary blue background */
 .service-card--active {
   background: var(--primary);
   border-color: var(--primary);
 }
 
 .service-card--active h4,
-.service-card--active p,
+.service-card--active p {
+  color: var(--white);
+}
+
 .service-card--active .read-more {
+  color: rgba(255,255,255,0.85);
+}
+
+.service-card--active .read-more:hover {
   color: var(--white);
 }
 
@@ -799,6 +842,10 @@ ul {
 ===================================================== */
 .experts {
   background: var(--light-bg);
+}
+
+.experts .section-header {
+  max-width: 780px;
 }
 
 .experts .section-header p {
@@ -865,6 +912,7 @@ ul {
   overflow: hidden;
   border: 1px solid var(--border);
   transition: box-shadow var(--transition), transform var(--transition);
+  background: var(--white);
 }
 
 .blog-card:hover {

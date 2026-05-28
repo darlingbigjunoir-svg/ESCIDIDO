@@ -1,119 +1,412 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Escondido | About Us</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ==================== HEADER ==================== -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <i class="fa-solid fa-droplet logo-icon"></i>
+          <span>Escondido</span>
+        </div>
 
-    <title>Escondido | About Us</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!------------------HEADER------------------>
-    <header>
-      <div class="container">
-        <div class="navbar">
-          <div class="logo">
-            <h1>ECSONDIDIO</h1>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+        <nav class="nav" id="nav">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link active">About Us</a></li>
+            <li class="nav-dropdown">
+              <a href="services.html" class="nav-link">Services <i class="fa-solid fa-chevron-down fa-2xs"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Leak Repair</a></li>
+                <li><a href="#">Pipe Install</a></li>
+                <li><a href="#">Drain Cleaning</a></li>
+                <li><a href="#">Water Heater</a></li>
+              </ul>
+            </li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="#" class="nav-cart" aria-label="Cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+          <a href="sign.html" class="btn btn-primary">Sign Up</a>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== PAGE HERO / BREADCRUMB ==================== -->
+  <section class="page-hero">
+    <div class="page-hero-pattern"></div>
+    <div class="container">
+      <div class="page-hero-inner">
+        <div class="page-hero-content">
+          <p class="page-hero-eyebrow">
+            <i class="fa-solid fa-droplet"></i> About Escondido
+          </p>
+          <h1 class="page-hero-title">We Are Trusted<br>Plumbing Experts</h1>
+          <p class="page-hero-subtitle">
+            Delivering fast, reliable, and professional plumbing solutions for
+            homes and businesses since 2024. Our licensed technicians are
+            committed to your satisfaction.
+          </p>
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <i class="fa-solid fa-chevron-right fa-2xs"></i>
+            <span>About Us</span>
           </nav>
-
-          <a href="sign.hmtl">Sign Up </a>
         </div>
-      </div>
-    </header>
-
-    <footer class="footer">
-      <div class="footer-top">
-        <!-- Brand Column -->
-        <div class="footer-col footer-brand">
-          <div class="footer-logo">
-            <span class="logo-icon">&#9881;</span>
-            <span class="logo-text">ESCONDIDO</span>
-          </div>
-          <ul class="footer-contact">
-            <li>
-              <i class="fa-solid fa-envelope icon"></i>
-              bill.sanders@escondido.com
-            </li>
-            <li>
-              <i class="fa-solid fa-phone icon"></i>
-              (252) 555-0126
-            </li>
-            <li>
-              <i class="fa-solid fa-location-dot icon"></i>
-              2464 Royal Ln. Mesa, New Jersey
-            </li>
-          </ul>
-          <div class="footer-socials">
-            <a href="#" aria-label="Facebook" class="social-link">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" aria-label="X / Twitter" class="social-link">
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-            <a href="#" aria-label="LinkedIn" class="social-link">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="#" aria-label="Instagram" class="social-link">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
+        <div class="page-hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=700&q=80"
+            alt="Escondido plumbing experts at work"
+          />
+          <div class="page-hero-badge">
+            <div class="badge-stat">
+              <span class="badge-num">10+</span>
+              <span class="badge-label">Years Experience</span>
+            </div>
+            <div class="badge-divider"></div>
+            <div class="badge-stat">
+              <span class="badge-num">5K+</span>
+              <span class="badge-label">Happy Clients</span>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Quick Menu Column -->
-        <div class="footer-col">
-          <h4 class="footer-heading">Quick Menu</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="blog.html">Blogs</a></li>
-          </ul>
+  <!-- ==================== OUR STORY ==================== -->
+  <section class="our-story section-pad">
+    <div class="container">
+      <div class="story-inner">
+        <div class="story-img-stack">
+          <img
+            class="story-img-main"
+            src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=700&q=80"
+            alt="Plumbing work in progress"
+          />
+          <img
+            class="story-img-secondary"
+            src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=400&q=80"
+            alt="Plumbing team"
+          />
+          <div class="story-img-badge">
+            <i class="fa-solid fa-award"></i>
+            <span>Certified<br>Professionals</span>
+          </div>
         </div>
-
-        <!-- Legal Column -->
-        <div class="footer-col">
-          <h4 class="footer-heading">Legal</h4>
-          <ul class="footer-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms and Condition</a></li>
-            <li><a href="#">Cookies Policy</a></li>
-          </ul>
-        </div>
-
-        <!-- Company Column -->
-        <div class="footer-col">
-          <h4 class="footer-heading">Company</h4>
-          <ul class="footer-links">
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Documentation</a></li>
-          </ul>
+        <div class="story-content">
+          <p class="section-eyebrow">
+            <i class="fa-solid fa-circle-check"></i> Our Story
+          </p>
+          <h2>Built on Trust,<br>Driven by Excellence</h2>
+          <p class="story-lead">
+            Escondido was founded with one simple mission: to provide
+            homeowners and businesses with plumbing services they can genuinely
+            rely on — no hidden fees, no guesswork, no delays.
+          </p>
+          <p>
+            What started as a small local team has grown into a full-service
+            plumbing company, serving thousands of satisfied clients across the
+            region. We combine modern diagnostic tools, high-grade materials,
+            and precision repair methods to deliver results that last.
+          </p>
+          <p>
+            Every technician on our team is fully licensed, background-checked,
+            and trained to handle everything from emergency leak repairs to
+            complete bathroom renovations.
+          </p>
+          <div class="story-features">
+            <div class="story-feature">
+              <span class="feat-dot"><i class="fa-solid fa-circle-check"></i></span>
+              <span>Licensed &amp; Insured Technicians</span>
+            </div>
+            <div class="story-feature">
+              <span class="feat-dot"><i class="fa-solid fa-circle-check"></i></span>
+              <span>Upfront Transparent Pricing</span>
+            </div>
+            <div class="story-feature">
+              <span class="feat-dot"><i class="fa-solid fa-circle-check"></i></span>
+              <span>24/7 Emergency Services Available</span>
+            </div>
+            <div class="story-feature">
+              <span class="feat-dot"><i class="fa-solid fa-circle-check"></i></span>
+              <span>Satisfaction Guaranteed on Every Job</span>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-primary btn-arrow">
+            Get in Touch <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="footer-bottom">
-        <p>2026 Escondido, All right reserved</p>
+  <!-- ==================== STATS ==================== -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+          <div class="stat-num">5,000+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-wrench"></i></div>
+          <div class="stat-num">12,400+</div>
+          <div class="stat-label">Jobs Completed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-user-tie"></i></div>
+          <div class="stat-num">48</div>
+          <div class="stat-label">Expert Technicians</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+          <div class="stat-num">4.9/5</div>
+          <div class="stat-label">Average Rating</div>
+        </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <script src="js/script.js"></script>
-  </body>
+  <!-- ==================== MISSION & VALUES ==================== -->
+  <section class="values section-pad">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Mission &amp; Core Values</h2>
+        <p>Everything we do is guided by a commitment to quality, honesty, and customer-first thinking.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4>Integrity</h4>
+          <p>We believe in complete transparency. You'll always know exactly what the problem is and what it will cost to fix it — before we start.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h4>Speed</h4>
+          <p>Plumbing emergencies can't wait. Our dispatchers prioritize fast response times so your home is protected without delay.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="fa-solid fa-gem"></i></div>
+          <h4>Quality</h4>
+          <p>We use only professional-grade materials and follow industry best practices to ensure repairs that stand the test of time.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="fa-solid fa-handshake"></i></div>
+          <h4>Respect</h4>
+          <p>We treat every home as if it were our own — arriving on time, working cleanly, and leaving your space better than we found it.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="fa-solid fa-leaf"></i></div>
+          <h4>Sustainability</h4>
+          <p>We promote eco-friendly plumbing solutions that reduce water waste and lower your utility bills over the long term.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="fa-solid fa-headset"></i></div>
+          <h4>Support</h4>
+          <p>Our customer care team is available around the clock to answer questions, book appointments, and follow up on completed work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TEAM ==================== -->
+  <section class="experts section-pad" id="team">
+    <div class="container">
+      <div class="section-header">
+        <h2>The Experts Behind Every Success</h2>
+        <p>Our team is made up of skilled and experienced plumbing professionals dedicated to providing reliable, high-quality solutions. With a passion for excellence and a customer-first approach, we tackle every challenge with precision and care.</p>
+      </div>
+      <div class="experts-grid">
+        <div class="expert-card">
+          <div class="expert-img-wrap">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80" alt="John Anderson" />
+          </div>
+          <h5>John Anderson</h5>
+          <span>Lead Technician</span>
+        </div>
+        <div class="expert-card">
+          <div class="expert-img-wrap">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&q=80" alt="Sarah Miller" />
+          </div>
+          <h5>Sarah Miller</h5>
+          <span>Project Manager</span>
+        </div>
+        <div class="expert-card">
+          <div class="expert-img-wrap">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&q=80" alt="Michael Carter" />
+          </div>
+          <h5>Michael Carter</h5>
+          <span>Installation Specialist</span>
+        </div>
+        <div class="expert-card">
+          <div class="expert-img-wrap">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&q=80" alt="Emily Wright" />
+          </div>
+          <h5>Emily Wright</h5>
+          <span>Customer Support</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS ==================== -->
+  <section class="testimonials section-pad">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Our Clients Say</h2>
+        <p>Don't just take our word for it — here's what homeowners and businesses say about working with Escondido.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testi-text">"Escondido fixed a major pipe leak in under two hours. The technician was professional, clean, and extremely knowledgeable. I'll never call anyone else."</p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" alt="Robert Kim" />
+            <div>
+              <strong>Robert Kim</strong>
+              <span>Homeowner, New Jersey</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card testimonial-card--featured">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testi-text">"We've used Escondido for our commercial property for two years now. Reliable, fast, and always within budget. Highly recommend their maintenance plans."</p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&q=80" alt="Diana Patel" />
+            <div>
+              <strong>Diana Patel</strong>
+              <span>Property Manager, Mesa</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testi-text">"Called them at 11pm for a burst pipe and someone was at my door within the hour. Absolutely outstanding emergency response. True professionals."</p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&q=80" alt="Marcus Webb" />
+            <div>
+              <strong>Marcus Webb</strong>
+              <span>Business Owner, Newark</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA BANNER ==================== -->
+  <section class="about-cta">
+    <div class="about-cta-pattern"></div>
+    <div class="container">
+      <div class="about-cta-inner">
+        <div class="about-cta-content">
+          <h2>Ready to Experience the<br>Escondido Difference?</h2>
+          <p>Book a service today or give us a call — our team is standing by and ready to help.</p>
+        </div>
+        <div class="about-cta-actions">
+          <a href="contact.html" class="btn btn-white btn-arrow">
+            Book a Service <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="tel:+12525550126" class="btn about-cta-phone">
+            <i class="fa-solid fa-phone"></i> (252) 555-0126
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" id="contact">
+    <div class="footer-top">
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">
+          <i class="fa-solid fa-droplet"></i>
+          <span>ESCONDIDO</span>
+        </div>
+        <ul class="footer-contact">
+          <li>
+            <i class="fa-solid fa-envelope icon"></i>
+            bill.sanders@escondido.com
+          </li>
+          <li>
+            <i class="fa-solid fa-phone icon"></i>
+            (252) 555-0126
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot icon"></i>
+            2464 Royal Ln. Mesa, New Jersey
+          </li>
+        </ul>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="X" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Menu</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Legal</h4>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Condition</a></li>
+          <li><a href="#">Cookies Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Company</h4>
+        <ul class="footer-links">
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Documentation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2026 Escondido, All right reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
 </html>
