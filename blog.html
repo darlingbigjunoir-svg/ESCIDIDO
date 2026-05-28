@@ -1,84 +1,373 @@
 <!doctype html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Escondido | Blog</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/blog.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <!------------------HEADER------------------>
-    <header>
+
+    <!-- HEADER -->
+    <header class="header">
       <div class="container">
         <div class="navbar">
-          <div class="logo">
-            <h1>ECSONDIDIO</h1>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
+          <a href="index.html" class="logo">
+            <i class="fa-solid fa-gear logo-icon"></i>
+            ESCONDIDO
+          </a>
+
+          <nav class="nav" id="nav">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="about.html" class="nav-link">About Us</a></li>
+              <li class="nav-dropdown">
+                <a href="services.html" class="nav-link">
+                  Services <i class="fa-solid fa-chevron-down" style="font-size:0.65rem;"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Leak Repair</a></li>
+                  <li><a href="#">Pipe Install</a></li>
+                  <li><a href="#">Drain Cleaning</a></li>
+                  <li><a href="#">Water Heater</a></li>
+                  <li><a href="#">Bath Upgrade</a></li>
+                  <li><a href="#">Toilet Repair</a></li>
+                </ul>
+              </li>
+              <li><a href="blog.html" class="nav-link active">Blog</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
           </nav>
 
-          <a href="sign.hmtl">Sign Up </a>
+          <div class="nav-actions">
+            <a href="#" class="nav-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="sign.html" class="btn btn-primary">Sign up</a>
+          </div>
+
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
     </header>
 
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero-pattern"></div>
+      <div class="container">
+        <div class="page-hero-inner">
+          <h1 class="page-hero-title">Latest Tips, News &amp; Plumbing Insights</h1>
+          <p class="page-hero-sub">Stay informed with expert plumbing advice, home maintenance tips, and industry news from the Escondido team.</p>
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG MAIN CONTENT -->
+    <section class="section-pad blog-section">
+      <div class="container">
+        <div class="blog-layout">
+
+          <!-- MAIN POSTS COLUMN -->
+          <main class="blog-main">
+
+            <!-- Featured Post -->
+            <article class="blog-featured">
+              <div class="blog-featured-img">
+                <img src="https://images.unsplash.com/photo-1585704032915-c3400305e979?w=900&q=80" alt="How to Maintain Good Water Pressure" />
+                <span class="blog-tag">Maintenance</span>
+              </div>
+              <div class="blog-featured-body">
+                <div class="blog-meta">
+                  <span><i class="fa-solid fa-calendar-days"></i> May 12, 2026</span>
+                  <span><i class="fa-solid fa-user"></i> John Anderson</span>
+                  <span><i class="fa-solid fa-clock"></i> 5 min read</span>
+                </div>
+                <h2>How to Maintain Good Water Pressure in Your Home</h2>
+                <p>Low water pressure can be frustrating — and it's often a symptom of a larger plumbing issue. In this guide, we walk through the most common causes of pressure loss and what you can do about them before calling a professional.</p>
+                <a href="#" class="btn btn-primary btn-arrow">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </article>
+
+            <!-- Category filter pills -->
+            <div class="blog-filters">
+              <button class="filter-pill filter-pill--active">All Posts</button>
+              <button class="filter-pill">Maintenance</button>
+              <button class="filter-pill">Emergency Tips</button>
+              <button class="filter-pill">Eco-Friendly</button>
+              <button class="filter-pill">DIY</button>
+              <button class="filter-pill">News</button>
+            </div>
+
+            <!-- Posts grid -->
+            <div class="blog-grid">
+
+              <article class="blog-card">
+                <div class="blog-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Emergency Plumbing" />
+                  <span class="blog-tag">Emergency Tips</span>
+                </div>
+                <div class="blog-body">
+                  <div class="blog-meta">
+                    <span><i class="fa-solid fa-calendar-days"></i> May 8, 2026</span>
+                    <span><i class="fa-solid fa-clock"></i> 4 min read</span>
+                  </div>
+                  <h5>Emergency Plumbing: What to Do Before a Technician Arrives</h5>
+                  <p>A burst pipe or backed-up drain can cause serious damage in minutes. Here's what to do immediately to minimize damage while you wait for help.</p>
+                  <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </article>
+
+              <article class="blog-card">
+                <div class="blog-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="Eco Plumbing" />
+                  <span class="blog-tag">Eco-Friendly</span>
+                </div>
+                <div class="blog-body">
+                  <div class="blog-meta">
+                    <span><i class="fa-solid fa-calendar-days"></i> Apr 29, 2026</span>
+                    <span><i class="fa-solid fa-clock"></i> 6 min read</span>
+                  </div>
+                  <h5>Eco-Friendly Plumbing Upgrades That Lower Your Water Bills</h5>
+                  <p>Small changes to your home's plumbing can have a big impact on both the environment and your monthly bills. We cover the best upgrades to make this year.</p>
+                  <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </article>
+
+              <article class="blog-card">
+                <div class="blog-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1607400201889-565b1ee75f8e?w=600&q=80" alt="Water Heater Tips" />
+                  <span class="blog-tag">Maintenance</span>
+                </div>
+                <div class="blog-body">
+                  <div class="blog-meta">
+                    <span><i class="fa-solid fa-calendar-days"></i> Apr 20, 2026</span>
+                    <span><i class="fa-solid fa-clock"></i> 5 min read</span>
+                  </div>
+                  <h5>Signs Your Water Heater Needs Replacing (Not Just Repairing)</h5>
+                  <p>Not every water heater issue means you need a full replacement — but some definitely do. Learn how to tell the difference and save yourself money.</p>
+                  <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </article>
+
+              <article class="blog-card">
+                <div class="blog-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80" alt="Bathroom Renovation" />
+                  <span class="blog-tag">DIY</span>
+                </div>
+                <div class="blog-body">
+                  <div class="blog-meta">
+                    <span><i class="fa-solid fa-calendar-days"></i> Apr 14, 2026</span>
+                    <span><i class="fa-solid fa-clock"></i> 7 min read</span>
+                  </div>
+                  <h5>Bathroom Renovation Mistakes to Avoid (According to Plumbers)</h5>
+                  <p>DIY bathroom renovations can go wrong fast when plumbing is involved. Our licensed plumbers share the most common and costly mistakes homeowners make.</p>
+                  <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </article>
+
+              <article class="blog-card">
+                <div class="blog-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="Drain Cleaning Tips" />
+                  <span class="blog-tag">Maintenance</span>
+                </div>
+                <div class="blog-body">
+                  <div class="blog-meta">
+                    <span><i class="fa-solid fa-calendar-days"></i> Apr 6, 2026</span>
+                    <span><i class="fa-solid fa-clock"></i> 4 min read</span>
+                  </div>
+                  <h5>How Often Should You Clean Your Drains — And How to Do It Right</h5>
+                  <p>Preventive drain cleaning is the easiest way to avoid blockages and expensive callouts. Here's a simple schedule and method to keep your drains healthy.</p>
+                  <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </article>
+
+              <article class="blog-card">
+                <div class="blog-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80" alt="Toilet Running" />
+                  <span class="blog-tag">DIY</span>
+                </div>
+                <div class="blog-body">
+                  <div class="blog-meta">
+                    <span><i class="fa-solid fa-calendar-days"></i> Mar 28, 2026</span>
+                    <span><i class="fa-solid fa-clock"></i> 3 min read</span>
+                  </div>
+                  <h5>Why Is My Toilet Running? Common Causes and Easy Fixes</h5>
+                  <p>A running toilet can waste hundreds of gallons of water a day. The good news: most causes are simple to fix. We explain what to look for and when to call a pro.</p>
+                  <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </article>
+
+            </div><!-- /.blog-grid -->
+
+            <!-- Pagination -->
+            <div class="blog-pagination">
+              <button class="page-btn page-btn--active">1</button>
+              <button class="page-btn">2</button>
+              <button class="page-btn">3</button>
+              <span class="page-dots">...</span>
+              <button class="page-btn">8</button>
+              <button class="page-btn page-btn--next">Next <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+          </main>
+
+          <!-- SIDEBAR -->
+          <aside class="blog-sidebar">
+
+            <!-- Search -->
+            <div class="sidebar-widget">
+              <h4 class="sidebar-heading">Search</h4>
+              <div class="sidebar-search">
+                <input type="text" placeholder="Search articles…" />
+                <button class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+            </div>
+
+            <!-- Categories -->
+            <div class="sidebar-widget">
+              <h4 class="sidebar-heading">Categories</h4>
+              <ul class="sidebar-categories">
+                <li>
+                  <a href="#">
+                    <span><i class="fa-solid fa-wrench"></i> Maintenance</span>
+                    <span class="cat-count">8</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fa-solid fa-bolt"></i> Emergency Tips</span>
+                    <span class="cat-count">5</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fa-solid fa-leaf"></i> Eco-Friendly</span>
+                    <span class="cat-count">6</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fa-solid fa-hammer"></i> DIY</span>
+                    <span class="cat-count">9</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><i class="fa-solid fa-newspaper"></i> News</span>
+                    <span class="cat-count">3</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Recent Posts -->
+            <div class="sidebar-widget">
+              <h4 class="sidebar-heading">Recent Posts</h4>
+              <ul class="sidebar-recent">
+                <li>
+                  <div class="recent-img">
+                    <img src="https://images.unsplash.com/photo-1585704032915-c3400305e979?w=120&q=80" alt="Water Pressure" />
+                  </div>
+                  <div class="recent-info">
+                    <a href="#">How to Maintain Good Water Pressure in Your Home</a>
+                    <span><i class="fa-solid fa-calendar-days"></i> May 12, 2026</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="recent-img">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=120&q=80" alt="Emergency Plumbing" />
+                  </div>
+                  <div class="recent-info">
+                    <a href="#">Emergency Plumbing: What to Do Before a Technician Arrives</a>
+                    <span><i class="fa-solid fa-calendar-days"></i> May 8, 2026</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="recent-img">
+                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=120&q=80" alt="Eco Plumbing" />
+                  </div>
+                  <div class="recent-info">
+                    <a href="#">Eco-Friendly Plumbing Upgrades That Lower Your Water Bills</a>
+                    <span><i class="fa-solid fa-calendar-days"></i> Apr 29, 2026</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Tags -->
+            <div class="sidebar-widget">
+              <h4 class="sidebar-heading">Popular Tags</h4>
+              <div class="sidebar-tags">
+                <a href="#" class="tag-pill">Leak Repair</a>
+                <a href="#" class="tag-pill">Water Pressure</a>
+                <a href="#" class="tag-pill">Drain</a>
+                <a href="#" class="tag-pill">Water Heater</a>
+                <a href="#" class="tag-pill">DIY</a>
+                <a href="#" class="tag-pill">Eco</a>
+                <a href="#" class="tag-pill">Emergency</a>
+                <a href="#" class="tag-pill">Bathroom</a>
+                <a href="#" class="tag-pill">Toilet</a>
+                <a href="#" class="tag-pill">Pipe</a>
+              </div>
+            </div>
+
+            <!-- CTA Widget -->
+            <div class="sidebar-widget sidebar-cta">
+              <i class="fa-solid fa-phone-volume sidebar-cta-icon"></i>
+              <h4>Need Help Now?</h4>
+              <p>Our technicians are available 24/7 for emergency plumbing services.</p>
+              <a href="contact.html" class="btn btn-white btn-block">Call (252) 555-0126</a>
+            </div>
+
+          </aside>
+
+        </div><!-- /.blog-layout -->
+      </div>
+    </section>
+
+    <!-- NEWSLETTER CTA -->
+    <section class="newsletter-strip">
+      <div class="container">
+        <div class="newsletter-inner">
+          <div class="newsletter-copy">
+            <h3>Stay in the Loop</h3>
+            <p>Get the latest plumbing tips and special offers delivered straight to your inbox.</p>
+          </div>
+          <form class="newsletter-form" onsubmit="return false;">
+            <div class="newsletter-input-wrap">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="Enter your email address" />
+            </div>
+            <button type="submit" class="btn btn-white">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-top">
-        <!-- Brand Column -->
         <div class="footer-col footer-brand">
           <div class="footer-logo">
-            <span class="logo-icon">&#9881;</span>
+            <i class="fa-solid fa-gear logo-icon"></i>
             <span class="logo-text">ESCONDIDO</span>
           </div>
           <ul class="footer-contact">
-            <li>
-              <i class="fa-solid fa-envelope icon"></i>
-              bill.sanders@escondido.com
-            </li>
-            <li>
-              <i class="fa-solid fa-phone icon"></i>
-              (252) 555-0126
-            </li>
-            <li>
-              <i class="fa-solid fa-location-dot icon"></i>
-              2464 Royal Ln. Mesa, New Jersey
-            </li>
+            <li><i class="fa-solid fa-envelope icon"></i> bill.sanders@escondido.com</li>
+            <li><i class="fa-solid fa-phone icon"></i> (252) 555-0126</li>
+            <li><i class="fa-solid fa-location-dot icon"></i> 2464 Royal Ln. Mesa, New Jersey</li>
           </ul>
           <div class="footer-socials">
-            <a href="#" aria-label="Facebook" class="social-link">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" aria-label="X / Twitter" class="social-link">
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-            <a href="#" aria-label="LinkedIn" class="social-link">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="#" aria-label="Instagram" class="social-link">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
+            <a href="#" aria-label="Facebook" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="X / Twitter" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram" class="social-link"><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
-
-        <!-- Quick Menu Column -->
         <div class="footer-col">
           <h4 class="footer-heading">Quick Menu</h4>
           <ul class="footer-links">
@@ -88,8 +377,6 @@
             <li><a href="blog.html">Blogs</a></li>
           </ul>
         </div>
-
-        <!-- Legal Column -->
         <div class="footer-col">
           <h4 class="footer-heading">Legal</h4>
           <ul class="footer-links">
@@ -98,8 +385,6 @@
             <li><a href="#">Cookies Policy</a></li>
           </ul>
         </div>
-
-        <!-- Company Column -->
         <div class="footer-col">
           <h4 class="footer-heading">Company</h4>
           <ul class="footer-links">
@@ -108,7 +393,6 @@
           </ul>
         </div>
       </div>
-
       <div class="footer-bottom">
         <p>2026 Escondido, All right reserved</p>
       </div>

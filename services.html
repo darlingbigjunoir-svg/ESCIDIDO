@@ -1,84 +1,348 @@
 <!doctype html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Escondido | Services </title>
+    <title>Escondido | Services</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <!------------------HEADER------------------>
-    <header>
+
+    <!-- HEADER -->
+    <header class="header">
       <div class="container">
         <div class="navbar">
-          <div class="logo">
-            <h1>ECSONDIDIO</h1>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
+          <a href="index.html" class="logo">
+            <i class="fa-solid fa-gear logo-icon"></i>
+            ESCONDIDO
+          </a>
+
+          <nav class="nav" id="nav">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="about.html" class="nav-link">About Us</a></li>
+              <li class="nav-dropdown">
+                <a href="services.html" class="nav-link active">
+                  Services <i class="fa-solid fa-chevron-down" style="font-size:0.65rem;"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Leak Repair</a></li>
+                  <li><a href="#">Pipe Install</a></li>
+                  <li><a href="#">Drain Cleaning</a></li>
+                  <li><a href="#">Water Heater</a></li>
+                  <li><a href="#">Bath Upgrade</a></li>
+                  <li><a href="#">Toilet Repair</a></li>
+                </ul>
+              </li>
+              <li><a href="blog.html" class="nav-link">Blog</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
           </nav>
 
-          <a href="sign.hmtl">Sign Up </a>
+          <div class="nav-actions">
+            <a href="#" class="nav-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="sign.html" class="btn btn-primary">Sign up</a>
+          </div>
+
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
     </header>
 
+    <!-- PAGE HERO / BREADCRUMB -->
+    <section class="page-hero">
+      <div class="page-hero-pattern"></div>
+      <div class="container">
+        <div class="page-hero-inner">
+          <h1 class="page-hero-title">Our Services</h1>
+          <p class="page-hero-sub">Fast, Reliable and Hassle-Free Plumbing Solutions for Your Home & Business</p>
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES OVERVIEW SECTION -->
+    <section class="section-pad services-overview">
+      <div class="container">
+        <div class="section-header">
+          <h2>What We Offer</h2>
+          <p>From quick fixes to complete installations, we handle it all with precision and care. Our expert technicians are available 24/7 to serve you.</p>
+        </div>
+
+        <div class="services-grid-full">
+
+          <!-- Leak Repair -->
+          <div class="service-full-card">
+            <div class="sfc-img">
+              <img src="https://images.unsplash.com/photo-1585704032915-c3400305e979?w=600&q=80" alt="Leak Repair" />
+              <div class="sfc-badge"><i class="fa-solid fa-droplet"></i></div>
+            </div>
+            <div class="sfc-body">
+              <div class="sfc-icon"><i class="fa-solid fa-droplet"></i></div>
+              <h3>Leak Repair</h3>
+              <p>Quick detection and fixing of leaks to prevent water damage. Our specialists use advanced tools to locate hidden leaks within walls, floors, and ceilings — saving you from costly structural damage and high water bills.</p>
+              <ul class="sfc-list">
+                <li><i class="fa-solid fa-circle-check"></i> Pipe leak detection & repair</li>
+                <li><i class="fa-solid fa-circle-check"></i> Slab leak solutions</li>
+                <li><i class="fa-solid fa-circle-check"></i> Emergency leak response</li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-arrow">Book Service <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Pipe Install -->
+          <div class="service-full-card service-full-card--reverse">
+            <div class="sfc-img">
+              <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="Pipe Install" />
+              <div class="sfc-badge"><i class="fa-solid fa-pipe-section"></i></div>
+            </div>
+            <div class="sfc-body">
+              <div class="sfc-icon"><i class="fa-solid fa-wrench"></i></div>
+              <h3>Pipe Install</h3>
+              <p>Professional installation for residential and commercial needs. Whether you're renovating or building new, our licensed plumbers ensure correct sizing, material selection, and code-compliant installation every time.</p>
+              <ul class="sfc-list">
+                <li><i class="fa-solid fa-circle-check"></i> New pipe installation</li>
+                <li><i class="fa-solid fa-circle-check"></i> Pipe replacement & repiping</li>
+                <li><i class="fa-solid fa-circle-check"></i> Commercial plumbing systems</li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-arrow">Book Service <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Drain Cleaning -->
+          <div class="service-full-card">
+            <div class="sfc-img">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Drain Cleaning" />
+              <div class="sfc-badge"><i class="fa-solid fa-tornado"></i></div>
+            </div>
+            <div class="sfc-body">
+              <div class="sfc-icon"><i class="fa-solid fa-tornado"></i></div>
+              <h3>Drain Cleaning</h3>
+              <p>Clear clogged drains and restore smooth water flow. We use hydro-jetting and professional-grade snaking to eliminate even the toughest blockages, leaving your drainage system clean and flowing freely.</p>
+              <ul class="sfc-list">
+                <li><i class="fa-solid fa-circle-check"></i> Hydro-jetting service</li>
+                <li><i class="fa-solid fa-circle-check"></i> Kitchen & bathroom drain clearing</li>
+                <li><i class="fa-solid fa-circle-check"></i> Sewer line cleaning</li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-arrow">Book Service <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Water Heater -->
+          <div class="service-full-card service-full-card--reverse">
+            <div class="sfc-img">
+              <img src="https://images.unsplash.com/photo-1607400201889-565b1ee75f8e?w=600&q=80" alt="Water Heater" />
+              <div class="sfc-badge"><i class="fa-solid fa-fire-flame-curved"></i></div>
+            </div>
+            <div class="sfc-body">
+              <div class="sfc-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+              <h3>Water Heater</h3>
+              <p>Installation, repair, and maintenance for all heater types. From traditional tank heaters to modern tankless systems, we keep your hot water running efficiently and reliably all year round.</p>
+              <ul class="sfc-list">
+                <li><i class="fa-solid fa-circle-check"></i> Tank & tankless installation</li>
+                <li><i class="fa-solid fa-circle-check"></i> Water heater repair</li>
+                <li><i class="fa-solid fa-circle-check"></i> Annual maintenance plans</li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-arrow">Book Service <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Bath Upgrade -->
+          <div class="service-full-card">
+            <div class="sfc-img">
+              <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80" alt="Bath Upgrade" />
+              <div class="sfc-badge"><i class="fa-solid fa-bath"></i></div>
+            </div>
+            <div class="sfc-body">
+              <div class="sfc-icon"><i class="fa-solid fa-bath"></i></div>
+              <h3>Bath Upgrade</h3>
+              <p>Upgrade your bathroom with modern, efficient fixtures. Our team handles complete bathroom remodels or simple fixture upgrades — faucets, showers, tubs, toilets — with attention to both function and style.</p>
+              <ul class="sfc-list">
+                <li><i class="fa-solid fa-circle-check"></i> Full bathroom remodels</li>
+                <li><i class="fa-solid fa-circle-check"></i> Fixture installation & upgrades</li>
+                <li><i class="fa-solid fa-circle-check"></i> Shower & tub conversions</li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-arrow">Book Service <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Toilet Repair -->
+          <div class="service-full-card service-full-card--reverse">
+            <div class="sfc-img">
+              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80" alt="Toilet Repair" />
+              <div class="sfc-badge"><i class="fa-solid fa-toilet"></i></div>
+            </div>
+            <div class="sfc-body">
+              <div class="sfc-icon"><i class="fa-solid fa-toilet"></i></div>
+              <h3>Toilet Repair</h3>
+              <p>Professional installation for residential and commercial properties. Whether it's a running toilet, a weak flush, or a complete replacement, our plumbers diagnose and fix the problem fast.</p>
+              <ul class="sfc-list">
+                <li><i class="fa-solid fa-circle-check"></i> Toilet installation & replacement</li>
+                <li><i class="fa-solid fa-circle-check"></i> Running & leaking toilet repair</li>
+                <li><i class="fa-solid fa-circle-check"></i> Commercial restroom service</li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-arrow">Book Service <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US STRIP -->
+    <section class="why-strip">
+      <div class="container">
+        <div class="why-grid">
+          <div class="why-item">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <h5>24/7 Emergency Service</h5>
+              <p>We're available around the clock for urgent plumbing needs.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+              <h5>Licensed & Insured</h5>
+              <p>All our technicians are fully licensed, bonded and insured.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <i class="fa-solid fa-tag"></i>
+            <div>
+              <h5>Upfront Pricing</h5>
+              <p>No hidden fees — you'll always know the cost before we start.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <i class="fa-solid fa-star"></i>
+            <div>
+              <h5>Satisfaction Guaranteed</h5>
+              <p>We stand behind every job with our quality guarantee.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPOINTMENT CTA SECTION -->
+    <section class="section-pad appointment">
+      <div class="container">
+        <div class="appt-inner">
+          <div class="appt-img">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80" alt="Plumber at work" />
+          </div>
+          <div class="appt-form-card">
+            <div class="appt-form-header">
+              <i class="fa-solid fa-calendar-check"></i> Book an Appointment
+            </div>
+            <h3>Make an Appointment</h3>
+            <p>Schedule your plumbing service in just a few clicks. Fill out the form below, choose your preferred date, and our expert technician will get back to you with confirmation.</p>
+            <form class="appt-form" onsubmit="return false;">
+              <input type="text" placeholder="Full Name" />
+              <div class="appt-row">
+                <input type="tel" placeholder="Phone Number" />
+                <input type="email" placeholder="Email Address" />
+              </div>
+              <div class="appt-row">
+                <select>
+                  <option value="" disabled selected>Select Service</option>
+                  <option>Leak Repair</option>
+                  <option>Pipe Install</option>
+                  <option>Drain Cleaning</option>
+                  <option>Water Heater</option>
+                  <option>Bath Upgrade</option>
+                  <option>Toilet Repair</option>
+                </select>
+                <input type="date" placeholder="Preferred Date" />
+              </div>
+              <div class="appt-row">
+                <input type="time" placeholder="Preferred Time" />
+                <input type="text" placeholder="Service Location" />
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Book Appointment Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section-pad testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our Clients Say</h2>
+          <p>Hundreds of homeowners and businesses trust Escondido for reliable plumbing solutions.</p>
+        </div>
+        <div class="testi-grid">
+          <div class="testi-card">
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Escondido fixed our burst pipe within hours. The technician was professional, clean, and got it right the first time. Highly recommended!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">JD</div>
+              <div>
+                <strong>James Donovan</strong>
+                <span>Homeowner, Mesa NJ</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"We had a complete bathroom renovation done by Escondido. Impeccable work, on time, and within budget. Our new bathroom looks amazing!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">RL</div>
+              <div>
+                <strong>Rachel Lee</strong>
+                <span>Property Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Called them at midnight for an emergency. They arrived in 45 minutes and had everything sorted quickly. That's the kind of service you remember."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">MT</div>
+              <div>
+                <strong>Mark Thompson</strong>
+                <span>Business Owner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-top">
-        <!-- Brand Column -->
         <div class="footer-col footer-brand">
           <div class="footer-logo">
-            <span class="logo-icon">&#9881;</span>
+            <i class="fa-solid fa-gear logo-icon"></i>
             <span class="logo-text">ESCONDIDO</span>
           </div>
           <ul class="footer-contact">
-            <li>
-              <i class="fa-solid fa-envelope icon"></i>
-              bill.sanders@escondido.com
-            </li>
-            <li>
-              <i class="fa-solid fa-phone icon"></i>
-              (252) 555-0126
-            </li>
-            <li>
-              <i class="fa-solid fa-location-dot icon"></i>
-              2464 Royal Ln. Mesa, New Jersey
-            </li>
+            <li><i class="fa-solid fa-envelope icon"></i> bill.sanders@escondido.com</li>
+            <li><i class="fa-solid fa-phone icon"></i> (252) 555-0126</li>
+            <li><i class="fa-solid fa-location-dot icon"></i> 2464 Royal Ln. Mesa, New Jersey</li>
           </ul>
           <div class="footer-socials">
-            <a href="#" aria-label="Facebook" class="social-link">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" aria-label="X / Twitter" class="social-link">
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-            <a href="#" aria-label="LinkedIn" class="social-link">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="#" aria-label="Instagram" class="social-link">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
+            <a href="#" aria-label="Facebook" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="X / Twitter" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram" class="social-link"><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
-
-        <!-- Quick Menu Column -->
         <div class="footer-col">
           <h4 class="footer-heading">Quick Menu</h4>
           <ul class="footer-links">
@@ -88,8 +352,6 @@
             <li><a href="blog.html">Blogs</a></li>
           </ul>
         </div>
-
-        <!-- Legal Column -->
         <div class="footer-col">
           <h4 class="footer-heading">Legal</h4>
           <ul class="footer-links">
@@ -98,8 +360,6 @@
             <li><a href="#">Cookies Policy</a></li>
           </ul>
         </div>
-
-        <!-- Company Column -->
         <div class="footer-col">
           <h4 class="footer-heading">Company</h4>
           <ul class="footer-links">
@@ -108,7 +368,6 @@
           </ul>
         </div>
       </div>
-
       <div class="footer-bottom">
         <p>2026 Escondido, All right reserved</p>
       </div>
