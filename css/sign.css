@@ -588,7 +588,7 @@ ul   { list-style: none; }
   font-size: 0.8rem;
   color: var(--text-mid);
   cursor: pointer;
-  user-select: none;
+
 }
 
 .checkbox-label input[type="checkbox"] {
