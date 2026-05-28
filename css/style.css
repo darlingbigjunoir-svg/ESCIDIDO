@@ -14,7 +14,16 @@ body{
     margin: auto;
     max-width: 1240px;
 }
-
+:root {
+  --footer-bg: #2b2b8b;
+  --footer-text: #ffffff;
+  --footer-muted: #c5c5e8;
+  --footer-link-hover: #ffffff;
+  --footer-border: rgba(255, 255, 255, 0.15);
+  --footer-bottom-bg: #22227a;
+  --social-bg: rgba(255, 255, 255, 0.12);
+  --social-hover-bg: rgba(255, 255, 255, 0.25);
+}
 
 
 
