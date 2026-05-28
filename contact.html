@@ -1,84 +1,345 @@
 <!doctype html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Escondido | Contact Us</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <!------------------HEADER------------------>
-    <header>
+
+    <!-- HEADER -->
+    <header class="header">
       <div class="container">
         <div class="navbar">
-          <div class="logo">
-            <h1>ECSONDIDIO</h1>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
+          <a href="index.html" class="logo">
+           <i class="fa-solid fa-droplet logo-icon"></i>
+            ESCONDIDO
+          </a>
+
+          <nav class="nav" id="nav">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="about.html" class="nav-link">About Us</a></li>
+              <li class="nav-dropdown">
+                <a href="services.html" class="nav-link">
+                  Services <i class="fa-solid fa-chevron-down" style="font-size:0.65rem;"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Leak Repair</a></li>
+                  <li><a href="#">Pipe Install</a></li>
+                  <li><a href="#">Drain Cleaning</a></li>
+                  <li><a href="#">Water Heater</a></li>
+                  <li><a href="#">Bath Upgrade</a></li>
+                  <li><a href="#">Toilet Repair</a></li>
+                </ul>
+              </li>
+              <li><a href="blog.html" class="nav-link">Blog</a></li>
+              <li><a href="contact.html" class="nav-link active">Contact</a></li>
             </ul>
           </nav>
 
-          <a href="sign.html">Sign Up </a>
+          <div class="nav-actions">
+            <a href="#" class="nav-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="sign.html" class="btn btn-primary">Sign up</a>
+          </div>
+
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
     </header>
 
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero-pattern"></div>
+      <div class="container">
+        <div class="page-hero-inner">
+          <h1 class="page-hero-title">Contact Us</h1>
+          <p class="page-hero-sub">Have a plumbing emergency or just a question? We're here 24/7 — reach out and our team will get back to you fast.</p>
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT INFO CARDS -->
+    <section class="contact-info-strip">
+      <div class="container">
+        <div class="contact-cards">
+
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <h4>Call Us</h4>
+            <p>Reach our team any time, day or night.</p>
+            <a href="tel:2525550126" class="contact-card-link">(252) 555-0126</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <i class="fa-solid fa-envelope-open-text"></i>
+            </div>
+            <h4>Email Us</h4>
+            <p>We respond to all emails within 2 hours.</p>
+            <a href="mailto:bill.sanders@escondido.com" class="contact-card-link">bill.sanders@escondido.com</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <h4>Visit Us</h4>
+            <p>Come see us at our main office location.</p>
+            <a href="#map" class="contact-card-link">2464 Royal Ln. Mesa, New Jersey</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <h4>Working Hours</h4>
+            <p>Mon – Fri: 7:00 AM – 8:00 PM</p>
+            <span class="contact-card-link">Emergency: 24/7</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM + MAP -->
+    <section class="section-pad contact-main">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- FORM SIDE -->
+          <div class="contact-form-wrap">
+            <div class="contact-form-header">
+              <i class="fa-solid fa-paper-plane"></i> Send a Message
+            </div>
+            <h2>Get In Touch With Us</h2>
+            <p>Fill out the form below and one of our expert technicians will contact you shortly to discuss your plumbing needs.</p>
+
+            <form class="contact-form" onsubmit="return false;">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="cf-name">Full Name</label>
+                  <input id="cf-name" type="text" placeholder="e.g. John Donovan" />
+                </div>
+                <div class="form-group">
+                  <label for="cf-phone">Phone Number</label>
+                  <input id="cf-phone" type="tel" placeholder="(252) 000-0000" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="cf-email">Email Address</label>
+                <input id="cf-email" type="email" placeholder="your@email.com" />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="cf-service">Service Needed</label>
+                  <select id="cf-service">
+                    <option value="" disabled selected>Select a service</option>
+                    <option>Leak Repair</option>
+                    <option>Pipe Install</option>
+                    <option>Drain Cleaning</option>
+                    <option>Water Heater</option>
+                    <option>Bath Upgrade</option>
+                    <option>Toilet Repair</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="cf-urgency">Urgency Level</label>
+                  <select id="cf-urgency">
+                    <option value="" disabled selected>How urgent?</option>
+                    <option>Emergency — ASAP</option>
+                    <option>Within 24 hours</option>
+                    <option>Within a week</option>
+                    <option>Just enquiring</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="cf-address">Service Address</label>
+                <input id="cf-address" type="text" placeholder="Your property address" />
+              </div>
+
+              <div class="form-group">
+                <label for="cf-message">Message</label>
+                <textarea id="cf-message" rows="5" placeholder="Describe your plumbing issue or question…"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-send">
+                Send Message <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+
+          <!-- INFO SIDE -->
+          <div class="contact-info-side">
+
+            <!-- Map placeholder -->
+            <div class="map-wrap" id="map">
+              <iframe
+                title="Escondido location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.7!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjEiTiA3NMKwMDAnMjEuNiJX!5e0!3m2!1sen!2sus!4v1234567890"
+                width="100%"
+                height="300"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+            <!-- Quick contact details -->
+            <div class="info-box">
+              <h4>Quick Contact</h4>
+              <ul class="info-list">
+                <li>
+                  <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                  <div>
+                    <span class="info-label">Phone</span>
+                    <a href="tel:2525550126">(252) 555-0126</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div>
+                    <span class="info-label">Email</span>
+                    <a href="mailto:bill.sanders@escondido.com">bill.sanders@escondido.com</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div>
+                    <span class="info-label">Address</span>
+                    <span>2464 Royal Ln. Mesa, New Jersey</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Hours box -->
+            <div class="info-box">
+              <h4>Business Hours</h4>
+              <ul class="hours-list">
+                <li><span>Monday – Friday</span><span>7:00 AM – 8:00 PM</span></li>
+                <li><span>Saturday</span><span>8:00 AM – 6:00 PM</span></li>
+                <li><span>Sunday</span><span>9:00 AM – 4:00 PM</span></li>
+                <li class="hours-emergency">
+                  <span><i class="fa-solid fa-bolt"></i> Emergency</span>
+                  <span>24 / 7</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Social links -->
+            <div class="info-box info-box--social">
+              <h4>Follow Us</h4>
+              <div class="contact-socials">
+                <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="social-link" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section-pad faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Quick answers to the questions we hear most from homeowners and businesses.</p>
+        </div>
+
+        <div class="faq-grid">
+
+          <details class="faq-item">
+            <summary>
+              <span>Do you offer 24/7 emergency plumbing services?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </summary>
+            <p>Yes! Our emergency line is always open. Whether it's a burst pipe at 2 AM or a blocked drain on a public holiday, our technicians are on standby and can typically reach you within 45–60 minutes.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>How quickly can a technician arrive?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </summary>
+            <p>For standard bookings we aim to be with you within 24 hours. For emergency callouts we target a response time of under 60 minutes depending on your location within our service area.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Are your plumbers licensed and insured?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </summary>
+            <p>Absolutely. Every Escondido technician is fully licensed, bonded, and insured. We also carry public liability insurance so you're fully protected throughout every job.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Do you provide upfront quotes?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </summary>
+            <p>Yes — we believe in transparent pricing. You'll always receive a clear, written quote before any work begins. There are no hidden fees or surprise charges on your final invoice.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>What areas do you service?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </summary>
+            <p>We currently service Mesa, New Jersey and the surrounding areas. Call us or fill out the contact form above to confirm whether we cover your location — we're expanding regularly.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Is there a call-out fee for estimates?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </summary>
+            <p>We offer free on-site estimates for most jobs. A small call-out fee may apply for certain emergency situations, which will always be communicated to you clearly before we dispatch a technician.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-top">
-        <!-- Brand Column -->
         <div class="footer-col footer-brand">
           <div class="footer-logo">
-            <span class="logo-icon">&#9881;</span>
+            <i class="fa-solid fa-gear logo-icon"></i>
             <span class="logo-text">ESCONDIDO</span>
           </div>
           <ul class="footer-contact">
-            <li>
-              <i class="fa-solid fa-envelope icon"></i>
-              bill.sanders@escondido.com
-            </li>
-            <li>
-              <i class="fa-solid fa-phone icon"></i>
-              (252) 555-0126
-            </li>
-            <li>
-              <i class="fa-solid fa-location-dot icon"></i>
-              2464 Royal Ln. Mesa, New Jersey
-            </li>
+            <li><i class="fa-solid fa-envelope icon"></i> bill.sanders@escondido.com</li>
+            <li><i class="fa-solid fa-phone icon"></i> (252) 555-0126</li>
+            <li><i class="fa-solid fa-location-dot icon"></i> 2464 Royal Ln. Mesa, New Jersey</li>
           </ul>
           <div class="footer-socials">
-            <a href="#" aria-label="Facebook" class="social-link">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" aria-label="X / Twitter" class="social-link">
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-            <a href="#" aria-label="LinkedIn" class="social-link">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="#" aria-label="Instagram" class="social-link">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
+            <a href="#" aria-label="Facebook" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="X / Twitter" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram" class="social-link"><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
-
-        <!-- Quick Menu Column -->
         <div class="footer-col">
           <h4 class="footer-heading">Quick Menu</h4>
           <ul class="footer-links">
@@ -88,8 +349,6 @@
             <li><a href="blog.html">Blogs</a></li>
           </ul>
         </div>
-
-        <!-- Legal Column -->
         <div class="footer-col">
           <h4 class="footer-heading">Legal</h4>
           <ul class="footer-links">
@@ -98,8 +357,6 @@
             <li><a href="#">Cookies Policy</a></li>
           </ul>
         </div>
-
-        <!-- Company Column -->
         <div class="footer-col">
           <h4 class="footer-heading">Company</h4>
           <ul class="footer-links">
@@ -108,7 +365,6 @@
           </ul>
         </div>
       </div>
-
       <div class="footer-bottom">
         <p>2026 Escondido, All right reserved</p>
       </div>
